@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Beautiful Memories 💕</title>
+    <link rel="stylesheet" href="gallery-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="floating-hearts-bg"></div>
+        
+        <header class="header">
+            <h1 class="main-title">Our Beautiful Journey Together 💖</h1>
+            <p class="subtitle">Every moment with you is a treasure ✨</p>
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">🌸 Back to Flower</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <!-- Photo Gallery Section -->
+            <section class="photo-gallery">
+                <h2 class="section-title">Our Precious Memories 📸</h2>
+                <div class="photo-grid" id="photoGrid">
+                    <!-- Existing Photos -->
+                    <div class="photo-card sparkle-effect">
+                        <img src="WhatsApp Image 2025-08-01 at 21.54.36_5ad245a7.jpg" alt="Beautiful Memory" class="uploaded-photo">
+                        <div class="photo-overlay">
+                            <button class="delete-photo-btn" onclick="deletePhoto(this)">🗑️</button>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-card sparkle-effect">
+                        <img src="WhatsApp Image 2025-08-01 at 21.55.00_61ff4778.jpg" alt="Beautiful Memory" class="uploaded-photo">
+                        <div class="photo-overlay">
+                            <button class="delete-photo-btn" onclick="deletePhoto(this)">🗑️</button>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-card sparkle-effect">
+                        <img src="WhatsApp Image 2025-08-01 at 21.55.40_6051880c.jpg" alt="Beautiful Memory" class="uploaded-photo">
+                        <div class="photo-overlay">
+                            <button class="delete-photo-btn" onclick="deletePhoto(this)">🗑️</button>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-card sparkle-effect">
+                        <img src="WhatsApp Image 2025-08-01 at 21.55.41_79c186fa.jpg" alt="Beautiful Memory" class="uploaded-photo">
+                        <div class="photo-overlay">
+                            <button class="delete-photo-btn" onclick="deletePhoto(this)">🗑️</button>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-card sparkle-effect">
+                        <img src="herpic.jpg" alt="Beautiful Memory" class="uploaded-photo">
+                        <div class="photo-overlay">
+                            <button class="delete-photo-btn" onclick="deletePhoto(this)">🗑️</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Add Photo Button -->
+                    <div class="photo-card add-photo-card" onclick="addNewPhoto()">
+                        <div class="add-photo-content">
+                            <span class="add-icon">📷</span>
+                            <p>Add Her Beautiful Photo</p>
+                            <button class="add-btn">Choose Photo</button>
+                        </div>
+                        <input type="file" id="photoInput" accept="image/*" style="display: none;" multiple>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Song Lines Section -->
+            <section class="song-section">
+                <h2 class="section-title">Songs That Remind Me of You 🎵</h2>
+                <div class="song-container">
+                    <div class="song-card" onclick="editSongLine(this)">
+                        <div class="song-icon">🎶</div>
+                        <div class="song-content">
+                            <p class="song-line" contenteditable="true">A love like ours could never die as long as I have you near me</p>
+                        </div>
+                    </div>
+                    
+                    <div class="song-card" onclick="editSongLine(this)">
+                        <div class="song-icon">💕</div>
+                        <div class="song-content">
+                            <p class="song-line" contenteditable="true">I won't give up on us even if the skies get rough</p>
+                        </div>
+                    </div>
+                    
+                    <div class="song-card" onclick="editSongLine(this)">
+                        <div class="song-icon">🌟</div>
+                        <div class="song-content">
+                            <p class="song-line" contenteditable="true">How I wish, wish you were here</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="add-song-btn" onclick="addNewSongCard()">
+                    <span>➕</span> Add Another Song Line
+                </button>
+            </section>
+
+            <!-- Love Notes Section -->
+            <section class="love-notes-section">
+                <h2 class="section-title">Sweet Messages for You 💌</h2>
+                <div class="notes-container">
+                    <div class="love-note">
+                        <div class="note-header">💖</div>
+                        <p class="note-content" contenteditable="true">You make every day feel like a fairytale...</p>
+                    </div>
+                    
+                    <div class="love-note">
+                        <div class="note-header">🌹</div>
+                        <p class="note-content" contenteditable="true">Your smile is the most beautiful thing I've ever seen...</p>
+                    </div>
+                    
+                    <div class="love-note">
+                        <div class="note-header">✨</div>
+                        <p class="note-content" contenteditable="true">I love you more than words can express...</p>
+                    </div>
+                </div>
+                
+                <button class="add-note-btn" onclick="addNewNote()">
+                    <span>💕</span> Add Another Note
+                </button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Made with 💖 for the most amazing person in my life</p>
+            <p class="date">National GF Day 2025 🌸</p>
+        </footer>
+    </div>
+
+    <script src="gallery-script.js"></script>
+</body>
+</html>
